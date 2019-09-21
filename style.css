@@ -1,0 +1,11 @@
+#about-me-media {
+    margin: 0 auto 0 auto; 
+    width: 50%;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

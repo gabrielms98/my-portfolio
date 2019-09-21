@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -18,23 +20,42 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="#welcome-home">Home</a>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About me <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About me <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <br>
+
     <body>
+
         <div id="welcome-home" class="jumbotron text-center">
             <br>
             <h1>Welcome to my Portfolio</h1>
-            <p>I'm doing my portfolio while I learn a bit of Bootstrap!</p>
+            <p id="about-me">I'm doing my portfolio while I learn a bit of Bootstrap!</p>
         </div>
+        <br>
         
+        <div class="media" id="about-me-media">
+            <img src="assets/profile-pic.jpeg" class="align-self-center mr-3 avatar" alt="..." width="150px">
+            <div class="media-body">
+                <h5 class="mt-0">ABOUT ME</h5>
+                <p>I study Computer Science at the University of Viçosa. My hobbies are to play soccer and develop android apps.</p>
+                <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+
+        </div>
+
+        <br><br>
+
+    
+
         
     </body>
 
