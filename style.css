@@ -3,9 +3,19 @@
     width: 50%;
 }
 
+.bg {
+  background-image: url('assets/bg.jpg');
+  color: white;
+}
+
 .avatar {
   vertical-align: middle;
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.titulo-div {
+  font-size: 18px;
+  font-weight: bold;
 }
