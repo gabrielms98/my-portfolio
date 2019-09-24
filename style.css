@@ -1,3 +1,9 @@
+/*
+    primary color: #007bff
+    font-color: #293347
+*/
+
+
 #about-me-media {
     margin: 0 auto 0 auto; 
     width: 50%;
@@ -43,6 +49,10 @@
     border-radius: 35px;
     font-size: 24px;
     line-height: 1.33;
+}
+
+img {
+    border-radius: 5px;
 }
 
 /* Footer */
