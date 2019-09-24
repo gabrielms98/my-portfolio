@@ -2,7 +2,30 @@
     primary color: #007bff
     font-color: #293347
 */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p:not(#about-me), h3, h5  {
+    color: #2c3e50 !important;
+}
+
+h2, h3, h5 {
+    font-weight: bold;
+}
+
+header {
+    font-family: "Titillium Web script=all rev=1";
+    font-weight: bolder !important;
+    font-style: normal;
+}
+
+.navbar-custom {
+    background-color: #2c3e50 !important;
+}
 
 #about-me-media {
     margin: 0 auto 0 auto; 
@@ -32,7 +55,7 @@
   right: 20px;
 }
 
-.round-button {
+.round-button { 
     width: 30px;
     height: 30px;
     padding: 6px 0px;
@@ -40,6 +63,7 @@
     text-align: center;
     font-size: 12px;
     line-height: 1.42857;
+    background-color: #007bff !important;
 }
 
 .round-button.btn-xl {
@@ -50,6 +74,7 @@
     font-size: 24px;
     line-height: 1.33;
 }
+
 
 img {
     border-radius: 5px;
