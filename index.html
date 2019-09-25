@@ -20,20 +20,24 @@
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase bg-dark navbar-custom">
-            <a class="navbar-brand" href="#welcome-home">Home</a>
+            <a class="navbar-brand" href="#welcome-home"><i class="fa fa-chevron-right"></i></a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about-me">About me <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#meus-projetos">Projetos <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#meus-projetos">Minhas Experiências <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#experiencias">Minhas Experiências <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
+            <button class="btn btn-outline-success">VAMOS CONVERSAR</button>
         </nav>
     </header>
 
@@ -53,7 +57,7 @@
             <div class="media-body">
                 <h5 class="mt-0">ABOUT ME</h5>
                 <p>Meu nome é Gabriel Martins, tenho 21 anos. Estou iniciando no mundo do desenvolvimento de software.</p>
-                <p>Sou estudante de Ciência da Computação pela UFV e atualmente tenho experiencia desenvolvimento web full stack (html, css, js, php, python), desenvolvimento android. </p>
+                <p>Sou estudante de Ciência da Computação pela UFV e atualmente tenho experiencia em desenvolvimento web full stack (html, css, js, php, python), desenvolvimento android. </p>
                 <p class="mb-0">Já desenvolvi aplicativos de grande porte para desktop (utilizando electron e vuejs) e android.</p>
             </div>
         </div>
@@ -63,11 +67,11 @@
             <a href="https://www.linkedin.com/in/gabrielms98/" target="_blank"><img src="assets/linkedin-logo.png" width="40px"></a>
         </div>
 
-        <br><br><br><br>
+        <br id="habilidades"><br><br><br>
 
-                <div>
-            <div class="text-center">
-                <h3>Minhas Experiências</h3>
+        <div>
+            <div class="text-center" >
+                <h3>Habilidades</h3>
             </div>
             <br>
             <div class="container text-center">
@@ -104,12 +108,12 @@
             </div>
         </div>
 
-        <br><br><br><br>
+        <br id="meus-projetos"><br><br><br>
 
         <div class="projects-div" style="background-color: #2c3e50;">
             <br><br>
             <div class="page-section-heading text-center text-uppercase text-white" >
-                <h2 id="meus-projetos">What I can do?</h2>
+                <h2 id="meus-projetos">WHAT I CAN DO</h2>
                 <h5 id="label-h5">Esses são os principais projetos que desenvolvi durante a faculade!</h5>
             </div>
             <br>
@@ -129,69 +133,54 @@
             <br>
         </div>
 
-        <br><br><br>
+        <br id="experiencias"><br><br><br>
+
+        <div>
+            <div class="text-center">
+                <h3>Minhas Experiências</h3>
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="assets/ufv-logo.png" alt="" width="300"> &nbsp
+                <img src="assets/nobugs-logo.png" alt="" width="300">
+            </div>
+            </div>
+        </div>
 
         <br><br><br><br>
         <a href="#" class="return-top"><button type="button" class="btn btn-primary round-button btn-xl"><i class="fa fa-level-up"></i></button></a>
 
+        <footer class="footer text-center">
+            <br><br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-uppercase mb-4">LOCALIZAÇÃO</h4>
+                        <p class="lead mb-0" id="footercol1">Viçosa / Belo Horizonte</p>
+                        <p class="lead mb-0"> Brasil</p>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-uppercase mb-4">ME ACHE</h4>
+                        <a href=""><i class="fa fa-facebook-square fa-3x" style="color: white;"></i></a>&nbsp
+                        <a href=""><i class="fa fa fa-github-square fa-3x" style="color: white;"></i></a>&nbsp
+                        <a href=""><i class="fa fa-linkedin-square fa-3x"style="color: white;"></i></a>&nbsp
+                        <a href=""><i class="fa fa-twitter-square fa-3x"style="color: white;"></i></a>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-uppercase mb-4">LICENSA</h4>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </footer>
+
+        <section class="copyright py-4 text-center text-white" style="background-color: #343a40;">
+            <div class="container">
+                <small>Copyright &copy; Gabriel 2019</small>
+            </div>
+        </section>
+
     </body>
 
-    <!--<footer>
-        <section id="footer">
-            <div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-				</div>
-				</hr>
-			</div>	
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
-				</div>
-				</hr>
-			</div>	
-		</div>
-        </section>
-    </footer> -->
 
 </html>
