@@ -1,6 +1,7 @@
 /*
     primary color: #007bff
     font-color: #293347
+    background-color: #2c3e50;
 */
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -11,12 +12,29 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p:not(#about-me, #footercol1, #footercol2, #footercol3), h3, h5  {
     color: #2c3e50 !important;
 }
 
 h2, h3, h5 {
     font-weight: bold;
+}
+
+
+span + h3  {
+    border-top: 1px solid black;
+    height: 1px;
+    content: " ";
+    width: 20%;
+    top: 1.2em;
+}
+
+h3 + span {
+    display: inline
 }
 
 h5#label-h5 {
@@ -38,9 +56,42 @@ footer div div div p {
     color: white;
 }
 
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: #2c3e50;
+	margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: #2c3e50;
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+    margin: 0px 8px;
+    
+}
+
+.div-progress {
+    vertical-align: middle; 
+    margin-top: 3px; 
+    width: 75%;
+    background-color: grey;
+}
+
+.progressbar-custom {
+    vertical-align: middle; 
+    /*background-color: #2c3e50;*/
+    background-color: white; 
+    color: #2c3e50;
+}
+
 .projects-div {
-    margin: 25px 25px;
-    border-radius: 20px;
+    /*margin: 25px 25px;
+    border-radius: 20px;*/
 }
 
 .img-wrap {

@@ -16,36 +16,40 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script src="jquery-3.4.1.min.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <title>My Portfolio</title>
     </head>
 
-    <header>
-        <nav class="shadow-custom navbar navbar-expand-md navbar-dark fixed-top text-uppercase bg-dark navbar-custom">
-            <a class="navbar-brand" href="#welcome-home"><i class="fa fa-chevron-right"></i></a>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">Sobre mim <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#meus-projetos">Projetos </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencias">Minhas Experiências </a>
-                    </li>
-                </ul>
-            </div>
-            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#formulario" >VAMOS CONVERSAR</button>
-        </nav>
-    </header>
+    <body>
+
+        <header>
+            <nav class="shadow-custom navbar navbar-expand-md navbar-dark fixed-top text-uppercase bg-dark navbar-custom">
+                <a class="navbar-brand" href="#welcome-home"><i class="fa fa-chevron-right"></i></a>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">Sobre mim <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencias">Minhas Experiências </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#meus-projetos">Projetos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#depoimentos">Depoimentos </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#formulario" >VAMOS CONVERSAR</button>
+            </nav>
+        </header>
 
     <br>
-
-    <body>
 
         <div class="modal fade" id="formulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -72,14 +76,14 @@
             </div>
         </div>
 
-        <div id="welcome-home" class="jumbotron text-center bg">
+        <section id="welcome-home" class="jumbotron text-center bg">
             <br>
             <h1>Bem vindo ao meu Portfolio</h1>
             <p id="about-me">I'm doing my portfolio while I learn a bit of Bootstrap!</p>
-        </div>
+        </section>
         <br>
         
-        <div class="media mx-auto" id="about-me-media" >
+        <section class="media mx-auto" id="about-me-media" >
             <img src="assets/profile-pic.jpeg" class="align-self-center mr-3 avatar" alt="..." width="150px">
             <div class="media-body">
                 <h5 class="mt-0">SOBRE MIM</h5>
@@ -87,7 +91,7 @@
                 <p>Sou estudante de Ciência da Computação pela UFV e atualmente tenho experiencia em desenvolvimento web full stack (html, css, js, php, python), desenvolvimento android. </p>
                 <p class="mb-0">Já desenvolvi aplicativos de grande porte para desktop (utilizando electron e vuejs) e android.</p>
             </div>
-        </div>
+        </section>
         <br>
         <div class="text-center">
             <a href="https://www.github.com/gabrielms98" target="_blank"><img src="assets/github-logo.svg" width="40px"></a> &nbsp
@@ -96,42 +100,90 @@
 
         <br id="habilidades"><br><br><br>
 
-        <div>
+        <section class="p-5" style="background-color:#2c3e50; color:white;">
             <div class="text-center" >
-                <h3>Habilidades</h3>
+                <div class="text-center">
+                    <div class="hr-sect mx-auto" style="width: 50%; color: white;"><h3 style="display: inline;">Habilidades</h3></div>
+                </div>
             </div>
             <br>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col" >
-                        <h5>Desenvolvimento Android: </h5>
+                    <div class="col text-right" >
+                        <h5>Android: </h5>
                     </div>
                     <div class="col" >
-                        <div class="progress" style="vertical-align: middle; margin-top: 3px; ">
-                            <div class="progress-bar" role="progressbar" style="width: 70%; vertical-align: middle; background-color: #2c3e50;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        <div class="progress div-progress">
+                            <div class="progress-bar progressbar-custom" role="progressbar" style="width: 70%; " aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                         </div>
                     </div>
                 </div>
                  <div class="row" style="margin-top: 10px;">
-                    <div class="col" >
+                    <div class="col text-right" >
                         <h5>Desenvolvimento Web: </h5>
                     </div>
                     <div class="col" >
-                        <div class="progress" style="vertical-align: middle; margin-top: 3px;">
-                            <div class="progress-bar" role="progressbar" style="width: 40%; vertical-align: middle; background-color: #2c3e50;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        <div class="progress div-progress" >
+                            <div class="progress-bar progressbar-custom" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
                         </div>
                     </div>
                 </div> 
                 <div class="row" style="margin-top: 10px;">
-                    <div class="col" >
+                    <div class="col text-right" >
                         <h5>C++: </h5>
                     </div>
                     <div class="col" >
-                        <div class="progress" style="vertical-align: middle; margin-top: 3px;">
-                            <div class="progress-bar" role="progressbar" style="width: 80%; vertical-align: middle; background-color: #2c3e50;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        <div class="progress div-progress">
+                            <div class="progress-bar progressbar-custom" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                         </div>
                     </div>
                 </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col text-right" >
+                        <h5>Miojo instantaneo: </h5>
+                    </div>
+                    <div class="col" >
+                        <div class="progress div-progress">
+                            <div class="progress-bar progressbar-custom" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col text-right" >
+                        <h5>Node JS: </h5>
+                    </div>
+                    <div class="col" >
+                        <div class="progress div-progress">
+                            <div class="progress-bar progressbar-custom" role="progressbar" style="width: 60%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col text-right" >
+                        <h5>Vue JS: </h5>
+                    </div>
+                    <div class="col" >
+                        <div class="progress div-progress">
+                            <div class="progress-bar progressbar-custom" role="progressbar" style="width: 50%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br id="experiencias"><br><br><br>
+
+        <section>
+            <div class="text-center">
+                <div class="text-center">
+                    <div class="hr-sect mx-auto" style="width: 50%;"><h3 style="display: inline;">Minhas Experiências</h3></div>
+                </div>
+            </div>
+            <br>
+            <div class="text-center">
+                <img src="assets/ufv-logo.png" alt="" width="225"> 
+                <img class="ml-4" src="assets/nobugs-logo.png" alt="" width="225">
+            </div>
             </div>
         </div>
 
@@ -140,7 +192,9 @@
         <div class="shadow projects-div" style="background-color: #2c3e50;">
             <br><br>
             <div class="page-section-heading text-center text-uppercase text-white" >
-                <h2 id="meus-projetos">WHAT I CAN DO</h2>
+                <div class="text-center">
+                    <div class="hr-sect mx-auto" style="width: 50%;"><h2 style="display: inline; color: white;">WHAT I CAN DO</h2></div>
+                </div>
                 <h5 id="label-h5">Esses são os principais projetos que desenvolvi durante a faculade!</h5>
             </div>
             <br>
@@ -158,28 +212,14 @@
                 </div>
             </div>
             <br>
-        </div>
+        </section>
 
-        <br id="experiencias"><br><br><br>
 
-        <div>
+        <br id="depoimentos" ><br><br><br>
+
+        <section>
             <div class="text-center">
-                <h3>Minhas Experiências</h3>
-            </div>
-            <br>
-            <div class="text-center">
-                <img src="assets/ufv-logo.png" alt="" width="225"> &nbsp&nbsp&nbsp&nbsp
-                <img src="assets/nobugs-logo.png" alt="" width="225">
-            </div>
-            </div>
-        </div>
-
-        <br><br><br><br>
-
-        <div class="">
-            <div class="text-center">
-                <h3>Depoimentos</h3>
-                <br>
+                <div class="hr-sect mx-auto" style="width: 50%;"><h3 style="display: inline;">Depoimentos</h3></div>
             </div>
             <div id="carousel-custom" class="carousel slide mx-auto" style="width: 50%;" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -189,32 +229,26 @@
                 </ol>
                 <div class="carousel-inner" >
                     <div class="carousel-item active text-center">
-                        <img src="assets/profile-pic.jpeg" class="avatar">
+                        <img src="assets/mae.jpeg" class="avatar">
                         <br>
-                        <p class="mt-2">The carousel is a slideshow for cycling through a 
-                            series of content, built with CSS 3D transforms and a bit of JavaScript. 
-                            It works with a series of images, text, or custom markup. It also includes 
-                            support for previous/next controls and indicators.</p>
+                        <h5 class="mt-4"> "Bonito e lindo!"</h5>
+                        <p class="text-right">Mãe, 2019</p>
                     </div>
                     <div class="carousel-item text-center">
                         <img src="assets/linkedin-logo.png" class="avatar">
                         <br>
-                        <p class="mt-2">The carousel is a slideshow for cycling through a 
-                            series of content, built with CSS 3D transforms and a bit of JavaScript. 
-                            It works with a series of images, text, or custom markup. It also includes 
-                            support for previous/next controls and indicators.</p>
+                        <h5 class="mt-4"> "Não é o pior que eu ja vi!"</h5>
+                        <p class="text-right">Pai, 2019</p>
                     </div>
                     <div class="carousel-item text-center">
                         <img src="assets/profile-pic.jpeg" class="avatar">
                         <br>
-                        <p class="mt-2">The carousel is a slideshow for cycling through a 
-                            series of content, built with CSS 3D transforms and a bit of JavaScript. 
-                            It works with a series of images, text, or custom markup. It also includes 
-                            support for previous/next controls and indicators.</p>
+                        <h5 class="mt-4"> "Não é o pior que eu ja vi!"</h5>
+                        <p class="text-right">Pai, 2019</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <br><br><br><br>
         <a href="#" class="return-top"><button type="button" class="btn btn-primary round-button btn-xl"><i class="fa fa-level-up"></i></button></a>
