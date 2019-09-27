@@ -16,11 +16,12 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <title>My Portfolio</title>
     </head>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase bg-dark navbar-custom">
+        <nav class="shadow-custom navbar navbar-expand-md navbar-dark fixed-top text-uppercase bg-dark navbar-custom">
             <a class="navbar-brand" href="#welcome-home"><i class="fa fa-chevron-right"></i></a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
@@ -28,13 +29,13 @@
                         <a class="nav-link" href="#about-me">Sobre mim <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#habilidades">Habilidades </span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#meus-projetos">Projetos <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#meus-projetos">Projetos </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experiencias">Minhas Experiências <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#experiencias">Minhas Experiências </a>
                     </li>
                 </ul>
             </div>
@@ -174,6 +175,48 @@
         </div>
 
         <br><br><br><br>
+
+        <div class="">
+            <div class="text-center">
+                <h3>Depoimentos</h3>
+                <br>
+            </div>
+            <div id="carousel-custom" class="carousel slide mx-auto" style="width: 50%;" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-custom" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-custom" data-slide-to="1"></li>
+                    <li data-target="#carousel-custom" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" >
+                    <div class="carousel-item active text-center">
+                        <img src="assets/profile-pic.jpeg" class="avatar">
+                        <br>
+                        <p class="mt-2">The carousel is a slideshow for cycling through a 
+                            series of content, built with CSS 3D transforms and a bit of JavaScript. 
+                            It works with a series of images, text, or custom markup. It also includes 
+                            support for previous/next controls and indicators.</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="assets/linkedin-logo.png" class="avatar">
+                        <br>
+                        <p class="mt-2">The carousel is a slideshow for cycling through a 
+                            series of content, built with CSS 3D transforms and a bit of JavaScript. 
+                            It works with a series of images, text, or custom markup. It also includes 
+                            support for previous/next controls and indicators.</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="assets/profile-pic.jpeg" class="avatar">
+                        <br>
+                        <p class="mt-2">The carousel is a slideshow for cycling through a 
+                            series of content, built with CSS 3D transforms and a bit of JavaScript. 
+                            It works with a series of images, text, or custom markup. It also includes 
+                            support for previous/next controls and indicators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
         <a href="#" class="return-top"><button type="button" class="btn btn-primary round-button btn-xl"><i class="fa fa-level-up"></i></button></a>
 
         <footer class="footer text-center">
@@ -230,10 +273,7 @@
         var telefone = document.getElementById("telefone").value;
         var email = document.getElementById("email").value;
         var mensagem = document.getElementById("mensagem").value;
-         
-        if(validateEmail(email)){
-            button.submit();
-        }
         
+        button.submit();
     }
 </script>

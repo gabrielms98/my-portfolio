@@ -1,9 +1,16 @@
 <?php
 
-$nome = "";
-$email = "";
-$telefone = "";
-$mensagem = "";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '/Users/gabrielsilva/composer/vendor/autoload.php';
+
+echo (extension_loaded('openssl')?'SSL loaded':'SSL not loaded')."\n";
+
+$nome = "Gabriel M Silva";
+$email = "gmbiel1@gmail.com";
+$telefone = "983238957";
+$mensagem = "Mensagem enviada pelo terminal \n" . $telefone . "\n";
 
 if(isset($_POST['nome'])){
     $nome = $_POST['nome'];
@@ -20,21 +27,58 @@ if(isset($_POST['telefone'])){
 if(isset($_POST['mensagem'])){
     $mensagem = $_POST['mensagem'];
 }
+ 
+// Instância do objeto PHPMailer
+$mail = new PHPMailer;
+ 
+// Configura para envio de e-mails usando SMTP
+$mail->isSMTP();
+$mail->SMTPAutoTLS = false;
 
-$to      = 'gmbiel1@gmail.com';
-$subject = 'Mensagem via Portfolio!';
-$headers = 'From: ' . $email . "\r\n" .
-    'Reply-To: ' . $email . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+// Servidor SMTP
+$mail->Host = 'smtp25.elasticemail.com';
 
-$success = mail($to, $subject, $mensagem, $headers);
+$mail->SMTPSecure = 'tsl'; 
+// Usar autenticação SMTP
+$mail->SMTPAuth = true;
 
-if (!$success) {
-    $errorMessage = error_get_last()['message'];
-    header("Location: index.html?error=" .$errorMessage );
-} else {
+$mail->SMTPDebug  = 4;
+
+$mail->Port = 587;
+
+// Usuário da conta
+$mail->Username = 'dreammerz98@gmail.com';
+ 
+// Senha da conta
+$mail->Password = 'fdcb2831-12e6-4981-930f-8621f24607f9';
+
+// Informa se vamos enviar mensagens usando HTML
+//$mail->IsHTML(true);
+ 
+// Email do Remetente
+$mail->From = $email;
+ 
+// Nome do Remetente
+$mail->FromName = $nome;
+ 
+// Endereço do e-mail do destinatário
+$mail->addAddress('gmbiel1@gmail.com');
+ 
+// Assunto do e-mail
+$mail->Subject = 'E-mail PHPMailer - TESTE';
+ 
+// Mensagem que vai no corpo do e-mail
+$mail->Body = $mensagem;
+
+$mail->Send();
+
+echo('Done');
+// Envia o e-mail e captura o sucesso ou erro
+/*if($mail->Send()):
     header("Location: index.html?success");
-}
+else:
+    header("Location: index.html?error=". $mail->Debugoutput) ;
+endif;*/
 
 
 ?>
