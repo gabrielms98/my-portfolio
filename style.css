@@ -16,6 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body.en {
+    display: hidden;
+}
+
 p:not(#about-me, #footercol1, #footercol2, #footercol3), h3, h5  {
     color: #2c3e50 !important;
 }

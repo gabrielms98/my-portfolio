@@ -21,9 +21,9 @@
         <title>My Portfolio</title>
     </head>
 
-    <body>
+    <body class="br">
 
-        <header>
+        <header >
             <nav class="shadow-custom navbar navbar-expand-md navbar-dark fixed-top text-uppercase bg-dark navbar-custom">
                 <a class="navbar-brand" href="#welcome-home"><i class="fa fa-chevron-right"></i></a>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -264,10 +264,10 @@
                     </div>
                     <div class="col">
                         <h4 class="text-uppercase mb-4">ME ACHE</h4>
-                        <a href=""><i class="fa fa-facebook-square fa-3x" style="color: white;"></i></a>&nbsp
-                        <a href=""><i class="fa fa fa-github-square fa-3x" style="color: white;"></i></a>&nbsp
-                        <a href=""><i class="fa fa-linkedin-square fa-3x"style="color: white;"></i></a>&nbsp
-                        <a href=""><i class="fa fa-twitter-square fa-3x"style="color: white;"></i></a>
+                        <a href="https://www.instagram.com/gabrielms98" target="_blank"><i class="fa fa-instagram fa-3x" style="color: white;"></i></a>&nbsp
+                        <a href="https://www.github.com/gabrielms98" target="_blank"><i class="fa fa fa-github-square fa-3x" style="color: white;"></i></a>&nbsp
+                        <a href="https://www.linkedin.com/in/gabrielms98" target="_blank"><i class="fa fa-linkedin-square fa-3x"style="color: white;"></i></a>&nbsp
+                        <a href="https://twitter.com/gbmslv98" target="_blank"><i class="fa fa-twitter-square fa-3x"style="color: white;"></i></a>
                     </div>
                     <div class="col">
                         <h4 class="text-uppercase mb-4">LICENÇA</h4>
@@ -285,7 +285,6 @@
 
     </body>
 
-
 </html>
 
 <script>
@@ -295,11 +294,6 @@
         return re.test(email);
     }
 
-    function validatePhone (phone) {
-        var regex = new RegExp('^((1[1-9])|([2-9][0-9]))((3[0-9]{3}[0-9]{4})|(9[0-9]{3}[0-9]{5}))$'); 
-        return regex.test(phone);
-    }
-
     function handleEmail(){
         var formulario = document.forms[0];
 
@@ -307,7 +301,11 @@
         var telefone = document.getElementById("telefone").value;
         var email = document.getElementById("email").value;
         var mensagem = document.getElementById("mensagem").value;
-        
-        window.open("mailto:gmbiel1@gmail.com?body=" + mensagem + "%0D%0AInformações de contato: " + telefone + " - " + nome + "%0D%0A" + email + "&subject=VAMOS CONVERSAR from: " + nome);
+
+        var msg = mensagem.split('\n');
+        mensagem = "";
+        for(let frase of msg) mensagem += frase + "%0D%0A";
+
+        if(validateEmail(email)) window.open("mailto:gmbiel1@gmail.com?body=" + mensagem + "%0D%0AInformações de contato: " + telefone + " - " + nome + "%0D%0AEmail: " + email + "&subject=VAMOS CONVERSAR from: " + nome);
     }   
 </script>
