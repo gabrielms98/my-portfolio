@@ -303,9 +303,8 @@
         var mensagem = document.getElementById("mensagem").value;
 
         var msg = mensagem.split('\n');
-        mensagem = "";
-        for(let frase of msg) mensagem += frase + "%0D%0A";
+        mensagem = msg.join("%0D%0A");
 
-        if(validateEmail(email)) window.open("mailto:gmbiel1@gmail.com?body=" + mensagem + "%0D%0AInformações de contato: " + telefone + " - " + nome + "%0D%0AEmail: " + email + "&subject=VAMOS CONVERSAR from: " + nome);
+        if(validateEmail(email))     window.open("mailto:gmbiel1@gmail.com?body=" + mensagem + "%0D%0AInformações de contato: " + telefone + " - " + nome + "%0D%0AEmail: " + email + "&subject=VAMOS CONVERSAR from: " + nome);
     }   
 </script>
