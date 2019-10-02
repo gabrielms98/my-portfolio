@@ -22,6 +22,7 @@ p:not(#about-me, #footercol1, #footercol2, #footercol3), h3, h5  {
 
 h2, h3, h5 {
     font-weight: bold;
+    margin: 15px 15px;
 }
 
 
@@ -72,7 +73,7 @@ footer div div div p {
 	font-size: 0px;
 	line-height: 0px;
     margin: 0px 8px;
-    
+
 }
 
 .div-progress {

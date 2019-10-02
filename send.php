@@ -36,9 +36,9 @@ $mail->isSMTP();
 $mail->SMTPAutoTLS = false;
 
 // Servidor SMTP
-$mail->Host = 'smtp25.elasticemail.com';
+$mail->Host = 'smtp.gmail.com';
 
-$mail->SMTPSecure = 'tsl'; 
+$mail->SMTPSecure = 'ssl'; 
 // Usar autenticação SMTP
 $mail->SMTPAuth = true;
 
@@ -50,7 +50,7 @@ $mail->Port = 587;
 $mail->Username = 'dreammerz98@gmail.com';
  
 // Senha da conta
-$mail->Password = 'fdcb2831-12e6-4981-930f-8621f24607f9';
+$mail->Password = 'bee3c4f5';
 
 // Informa se vamos enviar mensagens usando HTML
 //$mail->IsHTML(true);

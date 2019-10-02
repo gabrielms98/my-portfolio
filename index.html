@@ -60,7 +60,7 @@
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form action="send.php" method="POST">
+                    <form action="MAILTO:gmbiel1@gmail.com" method="POST" enctype="text/plain" target="_newtab">
                         <div class="modal-body">
                             <input id="nome" name="nome" class="form-control" placeholder="Nome" type="text">
                             <input id="email" name="email" class="form-control mt-1" placeholder="Email" type="text">
@@ -112,57 +112,57 @@
                     <div class="col text-right" >
                         <h5>Android: </h5>
                     </div>
-                    <div class="col" >
+                    <div class="col" style="margin-top: 15px;">
                         <div class="progress div-progress">
                             <div class="progress-bar progressbar-custom" role="progressbar" style="width: 70%; " aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                         </div>
                     </div>
                 </div>
-                 <div class="row" style="margin-top: 10px;">
+                 <div class="row">
                     <div class="col text-right" >
                         <h5>Desenvolvimento Web: </h5>
                     </div>
-                    <div class="col" >
+                    <div class="col" style="margin-top: 15px;">
                         <div class="progress div-progress" >
                             <div class="progress-bar progressbar-custom" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
                         </div>
                     </div>
                 </div> 
-                <div class="row" style="margin-top: 10px;">
+                <div class="row">
                     <div class="col text-right" >
                         <h5>C++: </h5>
                     </div>
-                    <div class="col" >
+                    <div class="col" style="margin-top: 15px;">
                         <div class="progress div-progress">
                             <div class="progress-bar progressbar-custom" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 10px;">
+                <div class="row">
                     <div class="col text-right" >
                         <h5>Miojo instantaneo: </h5>
                     </div>
-                    <div class="col" >
+                    <div class="col" style="margin-top: 15px;">
                         <div class="progress div-progress">
                             <div class="progress-bar progressbar-custom" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 10px;">
+                <div class="row" style="">
                     <div class="col text-right" >
                         <h5>Node JS: </h5>
                     </div>
-                    <div class="col" >
+                    <div class="col" style="margin-top: 15px;">
                         <div class="progress div-progress">
                             <div class="progress-bar progressbar-custom" role="progressbar" style="width: 60%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">60%</div>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="margin-top: 10px;">
+                <div class="row" >
                     <div class="col text-right" >
                         <h5>Vue JS: </h5>
                     </div>
-                    <div class="col" >
+                    <div class="col" style="margin-top: 15px;">
                         <div class="progress div-progress">
                             <div class="progress-bar progressbar-custom" role="progressbar" style="width: 50%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">50%</div>
                         </div>
@@ -270,7 +270,7 @@
                         <a href=""><i class="fa fa-twitter-square fa-3x"style="color: white;"></i></a>
                     </div>
                     <div class="col">
-                        <h4 class="text-uppercase mb-4">LICENSA</h4>
+                        <h4 class="text-uppercase mb-4">LICENÇA</h4>
                     </div>
                 </div>
             </div>
@@ -301,13 +301,13 @@
     }
 
     function handleEmail(){
-        var button = document.forms[0];
+        var formulario = document.forms[0];
 
         var nome = document.getElementById("nome").value;
         var telefone = document.getElementById("telefone").value;
         var email = document.getElementById("email").value;
         var mensagem = document.getElementById("mensagem").value;
         
-        button.submit();
-    }
+        window.open("mailto:gmbiel1@gmail.com?body=" + mensagem + "%0D%0AInformações de contato: " + telefone + " - " + nome + "%0D%0A" + email + "&subject=VAMOS CONVERSAR from: " + nome);
+    }   
 </script>
