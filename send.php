@@ -29,7 +29,7 @@ if(isset($_POST['mensagem'])){
 }
  
 // Instância do objeto PHPMailer
-$mail = new PHPMailer;
+$mail = new PHPMailer();
  
 // Configura para envio de e-mails usando SMTP
 $mail->isSMTP();
