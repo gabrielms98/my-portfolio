@@ -49,7 +49,7 @@
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form action="MAILTO:gmbiel1@gmail.com" method="POST" enctype="text/plain" target="_newtab">
+                    <form action="send.php" method="POST">
                         <div class="modal-body">
                             <input id="nome" name="nome" class="form-control" placeholder="Nome" type="text">
                             <input id="email" name="email" class="form-control mt-1" placeholder="Email" type="text">
@@ -59,7 +59,7 @@
                     </form>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" onclick="handleEmail();" class="btn btn-success">Enviar</button>
+                        <button type="button" onclick="handleEmail()" class="btn btn-success">Enviar</button>
                     </div>
                 </div>
             </div>

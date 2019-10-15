@@ -4,6 +4,8 @@ function validateEmail(email) {
 }
 
 function handleEmail() {
+  var formulario = document.forms[0];
+
   var nome = document.getElementById("nome").value;
   var telefone = document.getElementById("telefone").value;
   var email = document.getElementById("email").value;
@@ -12,7 +14,9 @@ function handleEmail() {
   var msg = mensagem.split("\n");
   mensagem = msg.join("%0D%0A");
 
-  if (validateEmail(email))
+  formulario.submit();
+
+  /*if (validateEmail(email))
     window.open(
       "mailto:gmbiel1@gmail.com?body=" +
         mensagem +
@@ -24,5 +28,5 @@ function handleEmail() {
         email +
         "&subject=VAMOS CONVERSAR from: " +
         nome
-    );
+    );*/
 }
