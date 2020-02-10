@@ -24,7 +24,7 @@ body.en {
   display: hidden;
 }
 
-p:not(#about-me, #footercol1, #footercol2, #footercol3),
+p:not(#about-me, #footercol1, #footercol2, #footercol3, #gambiarra),
 h3,
 h5 {
   color: var(--primary-color) !important;
